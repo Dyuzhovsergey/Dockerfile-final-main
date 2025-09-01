@@ -17,3 +17,5 @@ COPY --from=builder /app/app .
 RUN apk --no-cache add ca-certificates
 
 CMD ["./app"]
+
+
