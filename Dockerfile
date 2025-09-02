@@ -14,8 +14,8 @@ WORKDIR /root/
 
 COPY --from=builder /app/app .
 
+COPY --from=builder /app/tracker.db .
+
 RUN apk --no-cache add ca-certificates
 
 CMD ["./app"]
-
-
